@@ -23,7 +23,7 @@ require('./config/routes')(app, express);
   //TODO: Set up for DQL DB
 //Implemented with MongoDB locally for now
 
-mongoose.connect('mongodb://localhost/charmander-food-fairy');
+// mongoose.connect('mongodb://localhost/charmander-food-fairy');
 
 // Server Setup
 const port = process.env.PORT || 4000;

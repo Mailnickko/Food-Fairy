@@ -2,7 +2,7 @@ const recipesController = require('../recipes/recipesController');
 
 module.exports = function(app, express) {
 
-  //   // retrieve all recipes from db
+    // retrieve all recipes from db
   // app.get('/api/recipes', recipesController.getAllRecipes);
 
   //   // add recipes to mongo database and retrieve all recipes
