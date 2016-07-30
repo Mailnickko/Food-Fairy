@@ -10,9 +10,8 @@ var Home = (props) => (
     {/* green welcome div at the bottom of the home page */}
     <div className="homebox">
       <div className="homeIntro center-block">
-        <p>Welcome to FoodFairy.com! Just tell the Fairy what ingrediants you have lying around your house and she'll whip you up a recipe in no time!</p>
+        <p>Welcome to FoodFairy.com! Just tell the Fairy what ingredients you have lying around your house and she'll whip you up a recipe in no time!</p>
       </div>
-      <SearchBox searchAPI={props.searchAPI}/>
     </div>
   </div>
 )
