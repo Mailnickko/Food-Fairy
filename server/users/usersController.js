@@ -1,5 +1,5 @@
 const jwt = require('jwt-simple');
-const config = require('../config/app_key');
+const config = require('../config/auth_key');
 const User = require('./usersModel');
 /*
   # Takes in a user
