@@ -7,7 +7,16 @@ const LocalStrategy = require('passport-local');
 
 // Local Strategy => Will authenticate whether user exists in DB or not;
 const LocalOpts = { usernameField: 'username'};
-
+/*
+  # Takes in a payload obj and done callback
+  @username => username from client-side
+  @password => password from client-side
+  @done => callback supplied by passport => assigns result to req as req.user
+  # Ouputs a callback for
+    1) err
+    2) found user
+    3) no user found
+*/
 const LocalLogin = new LocalStrategy(LocalOpts, function(username, password, done) {
   User.findOne({ username: username }, function(err, user) {
     if (err) { return done(err); };
